@@ -1,0 +1,84 @@
+body {
+  background: #080808;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  color: #00faff;
+}
+
+.buttons {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  color: #00eaff;
+  background: transparent;
+  border: none;
+  border: 2px solid #00eaff;
+  border-radius: 10px;
+  font-weight: 600;
+  width: 100px;
+  cursor: pointer;
+  transition: 0.4s;
+  animation: hue-rotate infinite 1s;
+}
+
+button:hover {
+  background-color: #00eaff;
+  border: none;
+  color: black;
+  box-shadow:
+    0 0 35px #00eaff80,
+    0 0 15px #00eaff;
+}
+.player {
+  width: 320px;
+  padding: 25px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  box-shadow:
+    0 0 35px #00eaff80,
+    0 0 15px #00eaff;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  animation: hue-rotate infinite 1s;
+}
+
+.player {
+  margin-bottom: 20px;
+  color: #00faff;
+  text-shadow: 0 0 10px #00faff;
+}
+
+audio,
+video {
+  width: 100%;
+  margin-top: 10px;
+  filter: drop-shadow(0 0 10px #00eaff80);
+}
+
+.video {
+  display: none;
+}
+
+.active {
+  background-color: #00eaff;
+  border: none;
+  color: black;
+}
+
+@keyframes hue-rotate {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio-Video Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="audio-player">Audio</button>
+      <button class="video-player">Video</button>
+    </div>
+    <div class="audio">
+      <div class="player">
+        <h3>Audio Player</h3>
+        <audio controls autoplay>
+          <source
+            src="ENTER_YOUR_AUDIO_FILE_HERE"
+            type="audio/ogg"
+          />
+          <source src="" type="audio/mpeg" />
+          Your browser does not support this audio element.
+        </audio>
+      </div>
+    </div>
+    <div class="video">
+      <div class="player">
+        <h3>Video Player</h3>
+        <video controls autoplay height="200" width="300" poster="">
+          <source src="ENTER_YOUR_VIDEO_FILE_HERE" type="video/ogg" media="" />
+          <source src="" type="video/mp4" media="" />
+          Your browser does not support this audio element.
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
